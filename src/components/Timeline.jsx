@@ -53,7 +53,7 @@ export default function Timeline() {
     async function loadRepoData() {
       // Always try to load cached data first (even if old).
       const cachedData = getCachedData();
-      if (cachedData) setRepoData(cachedData);
+      if (cachedData) setRepoData(cachedData.data);
 
       // If cache is expired or doesn't exist, try to fetch fresh data.
       if (!cachedData || isCacheExpired(cachedData.timestamp)) {
