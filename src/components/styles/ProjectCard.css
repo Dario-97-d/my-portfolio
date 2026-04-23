@@ -60,34 +60,12 @@
   text-shadow: 0 0 10px rgba(144, 238, 144, 0.4);
 }
 
-.project-subtitle {
-  font-size: 1rem;
-  color: #c8f0c8;
-  margin: 0 0 18px 0;
-  line-height: 1.5;
-}
-
 .project-description {
   font-size: 1rem;
   line-height: 1.7;
   color: #c0c0c0;
   margin: 0 0 18px 0;
   flex-grow: 1;
-}
-
-.demo-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: #d8ffda;
-  text-decoration: none;
-  font-weight: 600;
-  margin-bottom: 18px;
-}
-
-.demo-link:hover {
-  color: #ffffff;
-  text-decoration: underline;
 }
 
 .project-footer {

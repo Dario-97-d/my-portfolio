@@ -4,24 +4,24 @@ import './styles/ProjectCard.css';
 
 const techIconUrls = {
   '.NET': '/tech/dotnet.svg',
-  API: '/tech/api.svg',
+  'API': '/tech/api.svg',
   'API Ninjas': '/tech/apininjas.svg',
   'ASP.NET Core': '/tech/aspnetcore.svg',
-  Blazor: '/tech/blazor.svg',
+  'Blazor': '/tech/blazor.svg',
   'Bootstrap 4': '/tech/bootstrap4.svg',
   'C#': '/tech/csharp.svg',
-  Console: '/tech/dotnetcli.svg',
-  CSS3: '/tech/css.svg',
-  Desktop: '/tech/desktop.svg',
+  'Console': '/tech/dotnetcli.svg',
+  'CSS3': '/tech/css.svg',
+  'Desktop': '/tech/desktop.svg',
   'EntityFramework Core': '/tech/efcore.svg',
   'File Sync': '/tech/filesync.svg',
-  JavaScript: '/tech/javascript.svg',
-  HTML5: '/tech/html.svg',
-  MAUI: '/tech/maui.svg',
-  OpenWeather: '/tech/openweather.svg',
-  React: '/tech/react.svg',
-  WinForms: '/tech/winforms.svg',
-  Default: '/tech/default.svg'
+  'JavaScript': '/tech/javascript.svg',
+  'HTML5': '/tech/html.svg',
+  'MAUI': '/tech/maui.svg',
+  'OpenWeather': '/tech/openweather.svg',
+  'React': '/tech/react.svg',
+  'WinForms': '/tech/winforms.svg',
+  'Default': '/tech/default.svg'
 };
 
 export default function ProjectCard({ project }) {
