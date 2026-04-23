@@ -26,6 +26,7 @@ const techIconUrls = {
 
 export default function ProjectCard({ project }) {
   const [activeTech, setActiveTech] = useState(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const handleTechClick = (tech) => {
     setActiveTech((currentTech) => (currentTech === tech ? null : tech));
@@ -37,7 +38,12 @@ export default function ProjectCard({ project }) {
   return (
     <div className="project-card">
       <div className="project-image-container">
-        <img src={project.image} alt={project.title} className="project-image" />
+        <img
+          src={project.image}
+          alt={project.title}
+          className={`project-image ${imageLoaded ? 'loaded' : ''}`}
+          onLoad={() => setImageLoaded(true)}
+        />
       </div>
       <div className="project-content">
         <h3 className="project-title">{project.title}</h3>

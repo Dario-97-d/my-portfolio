@@ -21,7 +21,6 @@ const CACHE_EXPIRY_HOURS = 24;
 
 export default function Timeline() {
   const [repoData, setRepoData] = useState({});
-  const [loading, setLoading] = useState(true);
 
   const getCachedData = () => {
   try {
@@ -94,8 +93,6 @@ export default function Timeline() {
           }
         }
       }
-
-      setLoading(false);
     }
 
     loadRepoData();
@@ -122,7 +119,7 @@ export default function Timeline() {
               {project.date}
             </div>
             <div className={`timeline-content ${index % 2 === 0 ? 'left' : 'right'}`}>
-              <ProjectCard project={project} loading={loading} />
+              <ProjectCard project={project} />
             </div>
           </div>
         ))}
